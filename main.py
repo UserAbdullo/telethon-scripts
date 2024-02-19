@@ -13,7 +13,7 @@ async def greeting(event):
   await event.reply("Hello! How are you?")
 
 
-@client.on(events.NewMessage(outgoing= True, pattern=".i"))
+@client.on(events.NewMessage(outgoing= True, pattern=".hi"))
 async def greeting(event):
   chat = await event.get_chat()
  # await client.send_message(chat, "Hello! How are you?")
